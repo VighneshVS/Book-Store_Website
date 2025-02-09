@@ -12,7 +12,7 @@ const ShowBook = () => {
   useEffect(()=>{
     setLoad(true);
     axios
-        .get(`book-store-dusky-sigma.vercel.app/books/${id}`)
+        .get(`http://localhost:8000/books/${id}`)
         .then((res) => {
           setBook(res.data);
           setLoad(false);

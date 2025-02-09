@@ -19,7 +19,7 @@ const CreateBook = () => {
     setLoad(true);
 
     axios
-        .post('book-store-dusky-sigma.vercel.app/books', data)
+        .post('http://localhost:8000/books', data)
         .then(() =>{
           setLoad(false);
           navigate('/');
