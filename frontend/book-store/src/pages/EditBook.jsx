@@ -14,7 +14,7 @@ const EditBook = () => {
   useEffect(() =>{
     setLoad(true);
     axios
-        .get(`http://localhost:8000/books/${id}`)
+        .get(`book-store-dusky-sigma.vercel.app/books/${id}`)
         .then(res => {
           setTitle(res.data.title);
           setAuthor(res.data.author);
@@ -37,7 +37,7 @@ const EditBook = () => {
     setLoad(true);
 
     axios
-        .put(`http://localhost:8000/books/${id}`, data)
+        .put(`book-store-dusky-sigma.vercel.app/books/${id}`, data)
         .then(() =>{
           setLoad(false);
           navigate('/');
