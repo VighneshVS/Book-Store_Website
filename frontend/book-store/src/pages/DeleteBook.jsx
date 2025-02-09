@@ -11,7 +11,7 @@ const DeleteBook = () => {
   const handleDelete =() =>{
     setLoad(true);
     axios
-        .delete(`http://localhost:8000/books/${id}`)
+        .delete(`book-store-dusky-sigma.vercel.app/books/${id}`)
         .then(()=>{
           setLoad(false);
           navigate('/');
