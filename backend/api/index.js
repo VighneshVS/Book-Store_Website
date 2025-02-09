@@ -1,6 +1,6 @@
 import express from "express";
 import mongoose from "mongoose";
-import { Book } from "./models/bookModel.js";
+import { Book } from "../models/bookModel.js";
 import cors from "cors";
 
 const port = process.env.PORT;
