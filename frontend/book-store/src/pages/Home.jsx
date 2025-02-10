@@ -17,7 +17,7 @@ const Home = () => {
   useEffect(() => {
     setLoad(true);
     axios
-      .get(`http://localhost:8000/books?page=${page}&limit=4&search=${search}`)
+      .get(`https://bookstoreweb-api.onrender.com?page=${page}&limit=4&search=${search}`)
       .then((res) => {
         setBooks(res.data.dataList);
         setTotalCount(res.data.totalCount);
