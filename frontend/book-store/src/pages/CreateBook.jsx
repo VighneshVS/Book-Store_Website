@@ -19,7 +19,7 @@ const CreateBook = () => {
     setLoad(true);
 
     axios
-        .post('https://bookstoreweb-api.onrender.com/books', data)
+        .post('http://localhost:8000/books', data)
         .then(() =>{
           setLoad(false);
           navigate('/');
